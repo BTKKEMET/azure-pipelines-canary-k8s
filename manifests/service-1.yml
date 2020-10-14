@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: "hqazinfdevk8clu01-7eb9"
+    labels:
+        app: "hqazinfdevk8clu01-7eb9"
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+      name: http
+    selector:
+        app: "hqazinfdevk8clu01-7eb9"
